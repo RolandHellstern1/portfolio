@@ -19,8 +19,6 @@ def countTrees(map, down, right):
         y = y + down
         if y >= len(map):
             break
-        print("x: " + str(x))
-        print((x + right) % len(map[y]))
         x = (x + right) % len(map[y])
         if map[y][x] == '#':
             trees = trees + 1
